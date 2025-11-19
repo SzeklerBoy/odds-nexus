@@ -1,0 +1,30 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Gradle Wrapper files
+gradle/wrapper/gradle-wrapper.jar
+
+# Java compiled files
+*.class
+
+# IDE-specific directories and files
+*.idea/
+*.ipr
+*.iws
+
+
+# Application-specific config files
+# (If you have any local config files that are not required to be shared, like db settings, etc.)
+*.env
