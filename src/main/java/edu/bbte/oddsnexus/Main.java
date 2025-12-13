@@ -10,13 +10,15 @@ public class Main {
 
         System.out.println("Hello, Gradle!");
 
-        User user = new User();
-        LoginContext loginContext = new LoginContext(new DbLoginStrategy());
-        loginContext.performRegister(user);
-        loginContext.performLogin(user);
+        User user = new User("Kicsi", "bela123");
 
-        loginContext.setAuthStrategy(new OAuthLoginStrategy());
-        loginContext.performRegister(user);
-        loginContext.performLogin(user);
-    }
+        LoginContext loginContext = new LoginContext(new DbLoginStrategy());
+
+        if(loginContext.performLogin(user)) {
+            System.out.println("Logged in successfully");
+        } else {
+            System.out.println("Log in failed");
+        }
+
+  }
 }
